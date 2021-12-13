@@ -36,7 +36,7 @@ def main():
     engine = create_engine("postgresql://postgres:postgres@localhost:5432/fakedata")
 
     # df = pd.read_sql_table( "customers", con=engine)
-    df = pd.DataFrame(create_rows(100))
+    df = pd.DataFrame(create_rows(500))
     # df['company_size'] = df.apply(lambda x: randomiser(x,["Small", "Large"], 0.5 ), axis = 1)
     #df.speed = df.apply(lambda x: np.random.uniform(0, 1) if x.speed == 0 and x.dir == 999 else x.speed, axis=1)
     df["Session"] = df.apply(lambda x: np.random.uniform(low=-5, high=5) + 5 if x.company_size =="Small" else np.random.uniform(low=-10, high=10) + 10 ,axis=1)

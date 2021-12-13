@@ -6,7 +6,7 @@
 # pip install -r requirements.txt
 
 
-# Create a DDL create_tables.py
+# Create a DDL create_tables.py 
 
 # Create a docker-compose.yaml 
 

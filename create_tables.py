@@ -17,7 +17,7 @@ customers_fake = Table(
      Column("customer_name", Integer, primary_key=True),
     Column("company_dt", String, nullable=False),
     Column("created_size", String, nullable=False),
-   column("session",String, nullable=False)
+   Column("session",String, nullable=False)
 )
 
 
